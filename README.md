@@ -9,18 +9,18 @@
 
 *  App
 
-	![Inicio](https://i.blogs.es/2e5608/fondosgoogle/1366_2000.jpg)
+	![Inicio](\Vista\IMG\Diseño1.PNG)
 	
 *  Agregar Empleado
 
-	![Agregar](Vista/IMG/Diseño2.png)
+	![Agregar](\Vista\IMG\Diseño2.PNG)
 	
 * Modificar Empleado
 
-	![Modificar](Vista/IMG/Diseño3.png)
+	![Modificar](\Vista\IMG\Diseño3.PNG)
 	
 *  Eliminar Empleado
 
-	![Eliminar](Vista/IMG/Diseño4.png)
+	![Eliminar](\Vista\IMG\Diseño4.PNG)
 
 
