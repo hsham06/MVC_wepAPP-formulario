@@ -67,8 +67,17 @@ require_once("../Controlador/ControladorDatosMain.php");
 							echo"<td>".$DatosEmpleados[$i]["Contacto"]."</td>";
 							echo"<td>".$DatosEmpleados[$i]["Deptop"]."</td>";
 							echo"<td>";
-								echo"<a href='#editEmployeeModal' onclick='setIdEmpleado(".$DatosEmpleados[$i]["ID"].")' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>";
-								echo"<a href='#deleteEmployeeModal' onclick='setIdEmpleado(".$DatosEmpleados[$i]["ID"].")' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a>";
+								echo"<script>let parametros".$DatosEmpleados[$i]["ID"]." = {
+
+											Nombre : '".$DatosEmpleados[$i]["Nombre"]."',
+											Email : '".$DatosEmpleados[$i]["Email"]."',
+											Direccion : '".$DatosEmpleados[$i]["Direccion"]."',
+											Contacto : '".$DatosEmpleados[$i]["Contacto"]."',
+											Deptop : '".$DatosEmpleados[$i]["Deptop"]."',
+											ID: ".$DatosEmpleados[$i]["ID"]."
+									}</script>";
+								echo"<a href='#editEmployeeModal' onclick='setDatosEmpleado(parametros".$DatosEmpleados[$i]["ID"].")' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>";
+								echo"<a href='#deleteEmployeeModal' onclick='setIdEmpleado(parametros".$DatosEmpleados[$i]["ID"].".ID".")' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a>";
 							echo"</td>";
 						echo"</tr>";
 							
@@ -125,7 +134,7 @@ require_once("../Controlador/ControladorDatosMain.php");
 <div id="editEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form>
+			<form id="ActualizarEmpleado" action="../Controlador/ControladorManipularDatos.php" method="post">
 				<div class="modal-header">						
 					<h4 class="modal-title">Editar Empleado</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -133,28 +142,30 @@ require_once("../Controlador/ControladorDatosMain.php");
 				<div class="modal-body">					
 					<div class="form-group">
 						<label>Nombre</label>
-						<input type="text" class="form-control" required>
+						<input name="Nombre" type="text" id="nombreUp" class="form-control" required>
 					</div>
 					<div class="form-group">
 						<label>Email</label>
-						<input type="email" class="form-control" required>
+						<input name="Email" type="email" id="emailUp" class="form-control" required>
 					</div>
 					<div class="form-group">
 						<label>Dirección</label>
-						<textarea class="form-control" required></textarea>
+						<textarea name="Direccion" class="form-control" id="DireccionUp" required></textarea>
 					</div>
 					<div class="form-group">
 						<label>Contacto</label>
-						<input type="text" class="form-control" required>
+						<input name="Contacto" type="text" class="form-control" id="ContactoUp" required>
 					</div>	
 					<div class="form-group">
 						<label>Depto.</label>
-						<input type="text" class="form-control" required>
+						<input name="Deptop" type="text" class="form-control" id="DeptoUp" required>
 					</div>					
 				</div>
 				<div class="modal-footer">
+				<input name="idEmpleado" id="IDActualizarEmpleado" type="hidden" class="form-control" value= "nulo">
+					<input name="form" type="hidden" class="form-control" value= "ActualizarEmpleado">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-info" value="Save">
+					<input type="submit" onclick="SumitFormActualizar();" class="btn btn-info" value="Save">
 				</div>
 			</form>
 		</div>
