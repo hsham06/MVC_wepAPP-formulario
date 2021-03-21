@@ -10,18 +10,18 @@
 <div align="center">
 
 - App
-	<img src="/Vista/IMG/Diseño1.png" style=" width:100px ; height:100px " />
+	![alt text](/Vista/IMG/Diseño1.png)
 	
 - Agregar Empleado
 
-	<img src="/Vista/IMG/Diseño2.png" style=" width:100px ; height:100px " />
+	![alt text](/Vista/IMG/Diseño2.png)
 	
 -Modificar Empleado
 
-	<img src="/Vista/IMG/Diseño3.png" style=" width:100px ; height:100px " />
+	![alt text](/Vista/IMG/Diseño3.png)
 	
 -Eliminar Empleado
 
-	<img src="/Vista/IMG/Diseño4.png" style=" width:100px ; height:100px " />
+	![alt text](/Vista/IMG/Diseño4.png)
 
 </div>
