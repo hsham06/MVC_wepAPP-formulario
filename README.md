@@ -7,21 +7,19 @@
 
 ## Vista previa
 
-<div align="center">
-
-- App
-	![alt text](/Vista/IMG/Diseño1.png)
+*  App
+	![Inicio](/Vista/IMG/Diseño1.png)
 	
-- Agregar Empleado
+*  Agregar Empleado
 
-	![alt text](/Vista/IMG/Diseño2.png)
+	![Agregar](/Vista/IMG/Diseño2.png)
 	
--Modificar Empleado
+* Modificar Empleado
 
-	![alt text](/Vista/IMG/Diseño3.png)
+	![Modificar](/Vista/IMG/Diseño3.png)
 	
--Eliminar Empleado
+*  Eliminar Empleado
 
-	![alt text](/Vista/IMG/Diseño4.png)
+	![Eliminar](/Vista/IMG/Diseño4.png)
 
-</div>
+
