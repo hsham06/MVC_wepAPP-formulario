@@ -9,18 +9,24 @@
 
 *  App
 
-	![Inicio](\Vista\IMG\Diseño1.PNG)
+	<p align="center">
+		<img src="\Vista\IMG\Diseño1.PNG" width="350" title="Inicio">
+	</p>
 	
 *  Agregar Empleado
 
-	![Agregar](\Vista\IMG\Diseño2.PNG)
+	<p align="center">
+		<img src="\Vista\IMG\Diseño2.PNG" width="350" title="Agregar">
+	</p>
 	
 * Modificar Empleado
 
-	![Modificar](\Vista\IMG\Diseño3.PNG)
+	<p align="center">
+		<img src="\Vista\IMG\Diseño3.PNG" width="350" title="Modificar">
+	</p>
 	
 *  Eliminar Empleado
 
-	![Eliminar](\Vista\IMG\Diseño4.PNG)
-
-
+	<p align="center">
+		<img src="\Vista\IMG\Diseño4.PNG" width="350" title="Eliminar">
+	</p>
