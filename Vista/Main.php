@@ -16,6 +16,7 @@ require_once("../Controlador/ControladorDatosMain.php");
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="JS\Anime.js"></script>
+<script src="JS\ObtenerIDEmpleado.js"></script>
 </head>
 <body>
 <div class="container-xl">
@@ -66,8 +67,8 @@ require_once("../Controlador/ControladorDatosMain.php");
 							echo"<td>".$DatosEmpleados[$i]["Contacto"]."</td>";
 							echo"<td>".$DatosEmpleados[$i]["Deptop"]."</td>";
 							echo"<td>";
-								echo"<a href='#editEmployeeModal' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>";
-								echo"<a href='#deleteEmployeeModal' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a>";
+								echo"<a href='#editEmployeeModal' onclick='setIdEmpleado(".$DatosEmpleados[$i]["ID"].")' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Editar'>&#xE254;</i></a>";
+								echo"<a href='#deleteEmployeeModal' onclick='setIdEmpleado(".$DatosEmpleados[$i]["ID"].")' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Eliminar'>&#xE872;</i></a>";
 							echo"</td>";
 						echo"</tr>";
 							
@@ -163,7 +164,7 @@ require_once("../Controlador/ControladorDatosMain.php");
 <div id="deleteEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form>
+			<form id="formEliminar" action="../Controlador/ControladorManipularDatos.php" method="post">
 				<div class="modal-header">						
 					<h4 class="modal-title">Eliminar Empleado</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -173,8 +174,10 @@ require_once("../Controlador/ControladorDatosMain.php");
 					<p class="text-warning"><small>Esta Acción se desecho.</small></p>
 				</div>
 				<div class="modal-footer">
+					<input name="idEmpleado" id="IDEliminarEmpleado" type="hidden" class="form-control" value= "nulo">
+					<input name="form" type="hidden" class="form-control" value= "EliminarEmpleado">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-danger" value="Delete">
+					<input type="submit" onclick="SumitFormEliminar();" class="btn btn-danger" value="Delete">
 				</div>
 			</form>
 		</div>

@@ -28,6 +28,12 @@ if(strncmp ($form, "AgregarEmpleado", 15 )==0)
 	$empleado->Agregar();
 	
 	
+}else if(strncmp ($form, "EliminarEmpleado", 16 )==0)
+{
+	$ID = $_POST["idEmpleado"];
+
+	$empleado->Eliminar($ID);
+	
 }
 	
 //print_r ($DatosEmpleados);
@@ -37,7 +43,7 @@ if(strncmp ($form, "AgregarEmpleado", 15 )==0)
 
 $empleado->Modificar(5);
 
-$empleado->Eliminar(5);*/
+;*/
 
 header ("Location: ../Vista/Main.php");
 
