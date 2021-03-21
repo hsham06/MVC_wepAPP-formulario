@@ -28,7 +28,7 @@ if(strncmp ($form, "AgregarEmpleado", 15 )==0)
 	$empleado->Agregar();
 	
 	
-}else if(strncmp ($form, "ActualizarEmpleado", 16 )==0)
+}else if(strncmp ($form, "ActualizarEmpleado", 18 )==0)
 {	
 	$Nombre = $_POST["Nombre"];
 	$Email = $_POST["Email"];
