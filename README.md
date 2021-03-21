@@ -9,7 +9,7 @@
 
 *  App
 
-	![Inicio](Vista/IMG/Diseño1.png)
+	![Inicio](https://i.blogs.es/2e5608/fondosgoogle/1366_2000.jpg)
 	
 *  Agregar Empleado
 
