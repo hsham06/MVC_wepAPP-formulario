@@ -8,18 +8,19 @@
 ## Vista previa
 
 *  App
-	![Inicio](/Vista/IMG/Diseño1.png)
+
+	![Inicio](Vista/IMG/Diseño1.png)
 	
 *  Agregar Empleado
 
-	![Agregar](/Vista/IMG/Diseño2.png)
+	![Agregar](Vista/IMG/Diseño2.png)
 	
 * Modificar Empleado
 
-	![Modificar](/Vista/IMG/Diseño3.png)
+	![Modificar](Vista/IMG/Diseño3.png)
 	
 *  Eliminar Empleado
 
-	![Eliminar](/Vista/IMG/Diseño4.png)
+	![Eliminar](Vista/IMG/Diseño4.png)
 
 
