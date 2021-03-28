@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-03-2021 a las 20:08:33
+-- Tiempo de generación: 28-03-2021 a las 20:58:05
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `lista_empleados` (
   `Nombre` varchar(50) NOT NULL,
-  `Email` varchar(20) NOT NULL,
+  `Email` varchar(50) NOT NULL,
   `Direccion` varchar(50) NOT NULL,
-  `Contacto` varchar(15) NOT NULL,
+  `Contacto` varchar(50) NOT NULL,
   `Deptop` varchar(50) NOT NULL,
   `ID` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
